@@ -14,7 +14,7 @@ with open("credenciais.json", mode='w') as arquivo:
 conta = ServiceAccountCredentials.from_json_keyfile_name("credenciais.json")
 api = gspread.authorize(conta) # sheets.new
 planilha = api.open_by_key("1Q139Sk3r3FUPLVGj1NjxgQXieGhskmmLRWSZB8bbhnM")
-sheet = planilha.worksheet("Sheet1")
+sheet = planilha.worksheet("Página1")
 app = Flask(__name__)
 
 
