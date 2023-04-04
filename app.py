@@ -88,7 +88,7 @@ def dedoduro2():
   return 'Planilha Escrita!'
 
 
-@app.route('/telegram-bot')
+@app.route('/telegram-bot', methods=["POST"])
 def telegram_bot():
   update = request.json
   chat_id = update["message"]["chat"]["id"]
