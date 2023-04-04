@@ -83,6 +83,6 @@ def promocoes2():
   return conteudo + "</ul>"
 
 @app.route('/dedoduro2')
-def dedoduro2:
+def dedoduro2():
   sheet.append_row(['Vitor', 202020, 2222, 'Pandas', 24.7])
   return 'Planilha Escrita!'
